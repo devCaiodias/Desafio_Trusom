@@ -25,6 +25,7 @@ Sistema completo para **gerenciamento de projetos e tarefas**, com autenticaçã
 
 ## 📁 Estrutura do Projeto
 
+```bash
 project-management-app/
 ├── backend/                  # API REST com NestJS
 │   └── src/
@@ -42,6 +43,7 @@ project-management-app/
 │       │   ├── services/    # Serviços de API e autenticação
 │       │   └── shared/      # Componentes reutilizáveis
 │       └── main.ts          # Bootstrap do Angular
+```
 
 ---
 

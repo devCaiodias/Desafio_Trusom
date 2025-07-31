@@ -26,22 +26,22 @@ Sistema completo para **gerenciamento de projetos e tarefas**, com autenticaçã
 ## 📁 Estrutura do Projeto
 
 project-management-app/
-├── backend/ # API REST com NestJS
-│ └── src/
-│ ├── auth/
-│ ├── users/
-│ ├── projects/
-│ ├── tasks/
-│ └── main.ts
-├── frontend/ # Interface com Angular
-│ └── src/
-│ ├── app/
-│ │ ├── auth/
-│ │ ├── dashboard/
-│ │ ├── services/
-│ │ └── shared/
-│ └── main.ts
-
+├── backend/                  # API REST com NestJS
+│   └── src/
+│       ├── auth/            # Módulo de autenticação (JWT)
+│       ├── users/           # Usuários e perfil
+│       ├── projects/        # CRUD de projetos
+│       ├── tasks/           # CRUD de tarefas por projeto
+│       └── main.ts          # Ponto de entrada da aplicação
+│
+├── frontend/                # Interface com Angular
+│   └── src/
+│       ├── app/
+│       │   ├── auth/        # Login, cadastro e proteção de rotas
+│       │   ├── dashboard/   # Tela principal (projetos e tarefas)
+│       │   ├── services/    # Serviços de API e autenticação
+│       │   └── shared/      # Componentes reutilizáveis
+│       └── main.ts          # Bootstrap do Angular
 
 ---
 

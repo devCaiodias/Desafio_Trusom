@@ -1,0 +1,17 @@
+<div class="min-h-screen flex items-center justify-center bg-gray-100">
+  <div class="w-[585px] h-[690px] bg-white p-8 rounded-lg shadow flex flex-col justify-center items-center">
+    <h1 class="text-3xl font-semibold">Back to your digital life</h1>
+    <p class="pb-4">Choose one of the option to go</p>
+    
+    <form [formGroup]="form" (ngSubmit)="handleSubmit()" class="flex flex-col items-center justify-center">
+      <input class="border border-gray-300 rounded-[10px] px-6 my-5 text-black w-[440px] h-[69px]" formControlName="email" type="email" placeholder="E-mail">
+      <input  class="border border-gray-300 rounded-[10px] px-6 my-4 text-black w-[440px] h-[69px]" formControlName="password" type="password" placeholder="Password">
+      
+      <button class="bg-blue-500 text-white w-[312px] h-[62px] rounded-[8px] p-7 text-center" type="submit" [disabled]="form.invalid">
+  Login
+</button>
+
+    </form>
+  </div>
+</div>
+
